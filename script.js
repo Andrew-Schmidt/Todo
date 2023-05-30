@@ -17,6 +17,13 @@ function addTask(){
 	inputBox.value = ""
 	savedata();
 }
+inputBox.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    //event.preventDefault();
+    addTask();
+		}
+	}
+)
 listContainer.addEventListener("click", function(e){
 	if(e.target.tagName === "LI"){
 		e.target.classList.toggle("checked");
