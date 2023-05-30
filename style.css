@@ -112,12 +112,16 @@ ul li span:hover
 }
 @media (max-width: 600px)
 {
+	body
+	{
+		width: 100%;
+	}
 	.row
 	{
-		min-width: 340px;
+		max-width: 400px;
 	}
 	.container
 	{
-		min-width: 100%;
+		width: 100%;
 	}
 }
